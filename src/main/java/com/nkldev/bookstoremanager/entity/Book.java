@@ -1,3 +1,5 @@
+package com.nkldev.bookstoremanager.entity;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,7 +17,7 @@ public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long Id;
 
     @Column(nullable = false, unique = true)
     private String name;
