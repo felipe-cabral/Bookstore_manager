@@ -1,13 +1,16 @@
-package entity;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import javax.persistence.*;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+@Entity
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 
-@entity
 public class author {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
